@@ -5,6 +5,7 @@ The oral cancer prediction dataset is a comprehensive dataset based on real-worl
 Objective: 
 •	Due to the increased risk of mortality from both primary causes and treatment complications, this machine learning model was built to predict the likely survival outcome of patients with existing risk factors or those already diagnosed with oral cancer. This will enable better prediction of treatment outcomes.
 •	The prediction of the 5-year survival rate for patients with oral cancer was performed using either all features or selected features from the database, which includes patients’ medical history, clinical diagnosis, demographic information, and social factors such as the estimated financial burden on the patient.
+
 Step 1. Preprocessing:
 •	Handle missing values (mean/median imputation or KNN imputation).
 •	Detect and remove outliers.
@@ -40,6 +41,7 @@ Selected Features:
 Step 3. Modeling:
 
 •	Train classification models (e.g., Logistic Regression, Random Forest, SVM).
+
 Step 4. Evaluation Metrics:
 •	  Use Accuracy, Precision, Recall, F1-Score, ROC-AUC.
 •	  Display confusion matrix and ROC curve.
@@ -54,7 +56,9 @@ Classification Model	Accuracy (All Features)	Accuracy (Selected Features)	Accura
 Logistic Regression	0.6925	0.6933	0.6931
 
 LightGBM	0.9800	0.9801	0.9822
+
 XGBoost	0.9796	0.9791	0.9822
+
 Random Forest	0.9804	0.9798	0.9814
 
 To conclude, a visual display of the confusion matrix and multiclass ROC curve was generated for each optimized classification model to illustrate performance.
